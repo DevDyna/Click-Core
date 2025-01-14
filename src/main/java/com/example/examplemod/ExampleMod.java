@@ -11,6 +11,7 @@ public class ExampleMod {
     public static final String MOD_ID = "examplemod";
 
     public ExampleMod(IEventBus modEventBus, ModContainer modContainer) {
+        ModRecipes.RECIPE_TYPES.register(modEventBus);
         ModRecipes.RECIPE_SERIALIZERS.register(modEventBus);
         NeoForge.EVENT_BUS.register(new RecipeEvent());
     }

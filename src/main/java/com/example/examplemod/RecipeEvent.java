@@ -33,8 +33,8 @@ public class RecipeEvent {
         // Create an input and query the recipe.
         RightClickBlockInput input = new RightClickBlockInput(blockState, itemStack);
         Optional<RecipeHolder<? extends Recipe<CraftingInput>>> optional = recipes.getRecipeFor(
-                // The recipe type.
-                RightClickBlockRecipe.RIGHT_CLICK_BLOCK,
+                
+                ModRecipes.RIGHT_CLICK_BLOCK_TYPE.get(),
                 input,
                 level
         );

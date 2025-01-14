@@ -13,6 +13,7 @@ public class ModRecipes {
 
     public void register(IEventBus bus) {
         RECIPE_SERIALIZERS.register(bus);
+        RECIPE_TYPES.register(bus);
     }
 
     public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZERS = DeferredRegister
